@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <style>
+        .progress-container {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            height: 30px;
+            border: 1px solid #ddd;
+        }
+
+        .progress-bar {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .progress-bar > div {
+            height: 100%;
+        }
+
+        .color1 {
+            width: 30%; /* Adjust width as needed */
+            background-color: #4caf50; /* Green */
+        }
+
+        .color2 {
+            width: 40%; /* Adjust width as needed */
+            background-color: #ff9800; /* Orange */
+        }
+
+        .color3 {
+            width: 30%; /* Adjust width as needed */
+            background-color: #f44336; /* Red */
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+        </div>
+    </div>
+</body>
+</html>
+
